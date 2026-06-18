@@ -1,1 +1,269 @@
+/* =========================
+   RESET BÁSICO
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
 
+body {
+    line-height: 1.6;
+    color: #1f2d1f;
+    background-color: #f4f7f4;
+}
+
+/* =========================
+   HEADER
+========================= */
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2e7d32;
+}
+
+.logo span {
+    color: #1b5e20;
+}
+
+.logo-icon {
+    margin-right: 5px;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #2f3e2f;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #2e7d32;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url('assets/hero.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.slogan {
+    font-size: 18px;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+.cta-button {
+    background: #43a047;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #2e7d32;
+}
+
+/* =========================
+   FEATURES
+========================= */
+.features-section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #2e7d32;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   DESAFIOS
+========================= */
+.challenges-section {
+    background: #e8f5e9;
+    padding: 80px 20px;
+}
+
+.challenges-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.challenges-text {
+    flex: 1;
+}
+
+.challenges-text h2 {
+    color: #1b5e20;
+    margin-bottom: 15px;
+}
+
+.challenges-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+}
+
+/* =========================
+   CONTATO
+========================= */
+.contact-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.newsletter-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.submit-button {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background: #1b5e20;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.main-footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.social-links a:hover {
+    opacity: 1;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .nav-menu ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .challenges-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
