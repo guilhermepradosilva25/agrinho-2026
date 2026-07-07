@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgroSustentável | O Futuro da Terra</title>
     
-    <!-- Meta Tags SEO -->
+    <!-- SEO -->
     <meta name="description" content="AgroSustentável - Soluções tecnológicas para agricultura sustentável e preservação ambiental.">
     <meta name="keywords" content="agricultura sustentável, agronegócio, tecnologia agrícola, sustentabilidade">
     <meta name="author" content="AgroSustentável">
@@ -15,28 +15,35 @@
     <meta property="og:description" content="Cultivando a Tecnologia, Preservando o Futuro">
     <meta property="og:type" content="website">
     
-    <!-- Fonte Inter -->
+    <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- Header -->
     <header class="main-header">
         <div class="header-container">
             <div class="logo">
                 <span class="logo-icon">🌿</span> Agro<span>Sustentável</span>
             </div>
             <nav class="nav-menu">
-                <ul>
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#producao">Produção</a></li>
                     <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#producao">Soluções</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
                     <li><a href="#desafios">Desafios</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
@@ -46,227 +53,471 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h1>Cultivando a Tecnologia, Preservando o Futuro</h1>
+                <span class="hero-badge">🌱 Agricultura do Futuro</span>
+                <h1>Cultivando a Tecnologia,<br>Preservando o Futuro</h1>
                 <p class="slogan">A evolução do agronegócio através de práticas que respeitam a terra e maximizam a produtividade.</p>
-                <a href="#producao" class="cta-button">Conheça Nossas Soluções</a>
+                <div class="hero-buttons">
+                    <a href="#producao" class="cta-button primary">Conheça Nossas Soluções</a>
+                    <a href="#contato" class="cta-button secondary">Fale Conosco</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <h3>500+</h3>
+                        <p>Fazendas Atendidas</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3>30%</h3>
+                        <p>Mais Produtividade</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3>1M+</h3>
+                        <p>Hectares Preservados</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Seção Sobre/Números -->
-        <section id="sobre" class="features-section">
-            <div class="section-title">
-                <h2>Quem Somos</h2>
-                <p>Transformando o campo com tecnologia e sustentabilidade desde 2020</p>
-            </div>
+        <!-- Seção Sobre -->
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Quem Somos</span>
+                    <h2>Transformando o Campo com Tecnologia</h2>
+                    <p>Desde 2020, unimos inovação e sustentabilidade para criar um futuro melhor para o agronegócio brasileiro.</p>
+                </div>
 
-            <div class="grid-container">
-                <article class="feature-card">
-                    <div class="card-icon">🌱</div>
-                    <h3>Nossa Missão</h3>
-                    <p>Promover a agricultura sustentável através de soluções inovadoras que aumentam a produtividade enquanto preservam os recursos naturais para as futuras gerações.</p>
-                </article>
-
-                <article class="feature-card">
-                    <div class="card-icon">🎯</div>
-                    <h3>Nossa Visão</h3>
-                    <p>Ser referência global em tecnologias agrícolas sustentáveis, contribuindo para um mundo onde produção alimentar e preservação ambiental caminham juntas.</p>
-                </article>
-
-                <article class="feature-card">
-                    <div class="card-icon">💚</div>
-                    <h3>Nossos Valores</h3>
-                    <p>Inovação, responsabilidade ambiental, transparência, compromisso com o produtor rural e respeito à natureza em todas as nossas ações.</p>
-                </article>
-            </div>
-        </section>
-
-        <!-- Seção de Estatísticas (usando features-section) -->
-        <section class="features-section" style="background: #e8f5e9;">
-            <div class="section-title">
-                <h2>Nossos Resultados</h2>
-                <p>Números que comprovam nosso impacto no campo</p>
-            </div>
-
-            <div class="grid-container">
-                <article class="feature-card" style="text-align: center;">
-                    <div class="card-icon" style="font-size: 40px;">500+</div>
-                    <h3>Fazendas Atendidas</h3>
-                    <p>Produtores que já transformaram sua produção com nossas soluções tecnológicas sustentáveis.</p>
-                </article>
-
-                <article class="feature-card" style="text-align: center;">
-                    <div class="card-icon" style="font-size: 40px;">30%</div>
-                    <h3>Redução de Desperdício</h3>
-                    <p>Economia significativa de insumos através do uso inteligente de tecnologia e dados.</p>
-                </article>
-
-                <article class="feature-card" style="text-align: center;">
-                    <div class="card-icon" style="font-size: 40px;">1M+</div>
-                    <h3>Hectares Preservados</h3>
-                    <p>Áreas de preservação ambiental mantidas e recuperadas em nossas propriedades parceiras.</p>
-                </article>
-
-                <article class="feature-card" style="text-align: center;">
-                    <div class="card-icon" style="font-size: 40px;">95%</div>
-                    <h3>Satisfação</h3>
-                    <p>Índice de satisfação dos nossos clientes com as soluções implementadas.</p>
-                </article>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon">🎯</div>
+                        <h3>Nossa Missão</h3>
+                        <p>Promover a agricultura sustentável através de soluções inovadoras que aumentam a produtividade enquanto preservam os recursos naturais para as futuras gerações.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">🔭</div>
+                        <h3>Nossa Visão</h3>
+                        <p>Ser referência global em tecnologias agrícolas sustentáveis, contribuindo para um mundo onde produção alimentar e preservação ambiental caminham juntas.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">💚</div>
+                        <h3>Nossos Valores</h3>
+                        <p>Inovação, responsabilidade ambiental, transparência, compromisso com o produtor rural e respeito à natureza em todas as nossas ações.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Seção de Produção/Soluções -->
+        <!-- Seção de Estatísticas -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-suffix">+</div>
+                        <p>Fazendas Atendidas</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="30">0</div>
+                        <div class="stat-suffix">%</div>
+                        <p>Redução de Desperdício</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="1">0</div>
+                        <div class="stat-suffix">M+</div>
+                        <p>Hectares Preservados</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="95">0</div>
+                        <div class="stat-suffix">%</div>
+                        <p>Satisfação dos Clientes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Soluções -->
         <section id="producao" class="features-section">
-            <div class="section-title">
-                <h2>Inovação no Campo</h2>
-                <p>Como a tecnologia e a responsabilidade ecológica andam lado a lado.</p>
-            </div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Nossas Soluções</span>
+                    <h2>Inovação no Campo</h2>
+                    <p>Como a tecnologia e a responsabilidade ecológica andam lado a lado.</p>
+                </div>
 
-            <div class="grid-container">
-                <article class="feature-card">
-                    <div class="card-icon">🚜</div>
-                    <h3>Economia & Tecnologia</h3>
-                    <p>Uso de inteligência artificial e sensores IoT para otimizar a colheita, reduzir custos operacionais e evitar o desperdício de insumos preciosos.</p>
-                </article>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">🚜</div>
+                        <h3>Economia & Tecnologia</h3>
+                        <p>Uso de inteligência artificial e sensores IoT para otimizar a colheita, reduzir custos operacionais e evitar o desperdício de insumos preciosos.</p>
+                        <a href="#" class="feature-link">Saiba mais →</a>
+                    </article>
 
-                <article class="feature-card">
-                    <div class="card-icon">💧</div>
-                    <h3>Sustentabilidade Ativa</h3>
-                    <p>Sistemas avançados de irrigação gota a gota combinados com o manejo biológico do solo, garantindo recursos naturais para as próximas gerações.</p>
-                </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">💧</div>
+                        <h3>Sustentabilidade Ativa</h3>
+                        <p>Sistemas avançados de irrigação gota a gota combinados com o manejo biológico do solo, garantindo recursos naturais para as próximas gerações.</p>
+                        <a href="#" class="feature-link">Saiba mais →</a>
+                    </article>
 
-                <article class="feature-card">
-                    <div class="card-icon">☀️</div>
-                    <h3>Futuro Verde</h3>
-                    <p>Transição energética do campo para fontes 100% limpas, como biomassa e energia solar, criando fazendas totalmente autossustentáveis.</p>
-                </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">☀️</div>
+                        <h3>Futuro Verde</h3>
+                        <p>Transição energética do campo para fontes 100% limpas, como biomassa e energia solar, criando fazendas totalmente autossustentáveis.</p>
+                        <a href="#" class="feature-link">Saiba mais →</a>
+                    </article>
 
-                <article class="feature-card">
-                    <div class="card-icon">📊</div>
-                    <h3>Análise de Dados</h3>
-                    <p>Monitoramento em tempo real com drones e satélites para tomada de decisões precisas, aumentando a eficiência e reduzindo impactos ambientais.</p>
-                </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Análise de Dados</h3>
+                        <p>Monitoramento em tempo real com drones e satélites para tomada de decisões precisas, aumentando a eficiência e reduzindo impactos ambientais.</p>
+                        <a href="#" class="feature-link">Saiba mais →</a>
+                    </article>
 
-                <article class="feature-card">
-                    <div class="card-icon">🎯</div>
-                    <h3>Agricultura de Precisão</h3>
-                    <p>Aplicação localizada de fertilizantes e defensivos, reduzindo o uso de químicos em até 60% e aumentando a qualidade da produção.</p>
-                </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Agricultura de Precisão</h3>
+                        <p>Aplicação localizada de fertilizantes e defensivos, reduzindo o uso de químicos em até 60% e aumentando a qualidade da produção.</p>
+                        <a href="#" class="feature-link">Saiba mais →</a>
+                    </article>
 
-                <article class="feature-card">
-                    <div class="card-icon">📱</div>
-                    <h3>Gestão Inteligente</h3>
-                    <p>Plataforma digital integrada para gerenciar toda a operação agrícola, do plantio à comercialização, com relatórios automatizados.</p>
-                </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Gestão Inteligente</h3>
+                        <p>Plataforma digital integrada para gerenciar toda a operação agrícola, do plantio à comercialização, com relatórios automatizados.</p>
+                        <a href="#" class="feature-link">Saiba mais →</a>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <!-- Seção de Depoimentos (usando features-section) -->
-        <section class="features-section" style="background: #f9fbe9;">
-            <div class="section-title">
-                <h2>O que dizem nossos parceiros</h2>
-                <p>Histórias reais de transformação no campo</p>
-            </div>
+        <!-- Seção de Depoimentos -->
+        <section id="depoimentos" class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Depoimentos</span>
+                    <h2>O que dizem nossos parceiros</h2>
+                    <p>Histórias reais de transformação no campo</p>
+                </div>
 
-            <div class="grid-container">
-                <article class="feature-card">
-                    <div class="card-icon">💬</div>
-                    <h3>João Silva</h3>
-                    <p><em>"A tecnologia da AgroSustentável transformou nossa produção. Reduzimos custos em 40% e aumentamos a produtividade em 25% no primeiro ano."</em></p>
-                    <p style="margin-top: 10px; font-weight: 600; color: #2e7d32;">Produtor Rural - MT</p>
-                </article>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">A tecnologia da AgroSustentável transformou nossa produção. Reduzimos custos em 40% e aumentamos a produtividade em 25% no primeiro ano.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JS</div>
+                            <div class="author-info">
+                                <h4>João Silva</h4>
+                                <span>Produtor Rural - MT</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </article>
 
-                <article class="feature-card">
-                    <div class="card-icon">💬</div>
-                    <h3>Maria Santos</h3>
-                    <p><em>"O sistema de irrigação inteligente economizou 50% de água e melhorou significativamente a qualidade das nossas culturas."</em></p>
-                    <p style="margin-top: 10px; font-weight: 600; color: #2e7d32;">Engenheira Agrônoma - GO</p>
-                </article>
+                    <article class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">O sistema de irrigação inteligente economizou 50% de água e melhorou significativamente a qualidade das nossas culturas. Resultado impressionante!</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MS</div>
+                            <div class="author-info">
+                                <h4>Maria Santos</h4>
+                                <span>Engenheira Agrônoma - GO</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </article>
 
-                <article class="feature-card">
-                    <div class="card-icon">💬</div>
-                    <h3>Carlos Oliveira</h3>
-                    <p><em>"A consultoria foi essencial para implementarmos energia solar na fazenda. Hoje somos autossustentáveis e economizamos R$ 15 mil por mês."</em></p>
-                    <p style="margin-top: 10px; font-weight: 600; color: #2e7d32;">Proprietário Rural - SP</p>
-                </article>
+                    <article class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">A consultoria foi essencial para implementarmos energia solar na fazenda. Hoje somos autossustentáveis e economizamos R$ 15 mil por mês.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">CO</div>
+                            <div class="author-info">
+                                <h4>Carlos Oliveira</h4>
+                                <span>Proprietário Rural - SP</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
         <!-- Seção de Desafios -->
         <section id="desafios" class="challenges-section">
-            <div class="challenges-container">
-                <div class="challenges-text">
-                    <h2>Os Grandes Desafios Globais</h2>
-                    <p>Alimentar uma população em crescimento constante sem expandir o desmatamento é o maior dilema do século. Nosso papel é transformar essa barreira em oportunidade através de ciência, dados de satélite e regeneração florestal integrada.</p>
-                    <p style="margin-top: 15px;">Trabalhamos diariamente para desenvolver soluções que equilibrem produção alimentar e preservação ambiental, garantindo um futuro sustentável para todos.</p>
-                </div>
-                <div class="challenges-image">
-                    <img src="assets/Campo agrícola.jpg" alt="Campo agrícola sustentável">
+            <div class="container">
+                <div class="challenges-wrapper">
+                    <div class="challenges-text">
+                        <span class="section-tag">Desafios Globais</span>
+                        <h2>Os Grandes Desafios do Século</h2>
+                        <p>Alimentar uma população em crescimento constante sem expandir o desmatamento é o maior dilema do século. Nosso papel é transformar essa barreira em oportunidade através de ciência, dados de satélite e regeneração florestal integrada.</p>
+                        
+                        <ul class="challenges-list">
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <strong>Aumentar produção em 70%</strong>
+                                    <p>Até 2050 para atender a demanda global</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <strong>Reduzir emissões em 50%</strong>
+                                    <p>Diminuir a pegada de carbono do setor</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <strong>Preservar biodiversidade</strong>
+                                    <p>Proteger recursos hídricos e florestais</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <strong>Segurança alimentar</strong>
+                                    <p>Garantir acesso universal a alimentos</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="challenges-image">
+                        <div class="image-placeholder">
+                            <span>🌾</span>
+                            <p>Campo Agrícola Sustentável</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Seção de Blog/Notícias (usando features-section) -->
-        <section class="features-section">
-            <div class="section-title">
-                <h2>Últimas Notícias</h2>
-                <p>Fique por dentro das tendências do agro sustentável</p>
-            </div>
+        <!-- Seção FAQ -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Dúvidas Frequentes</span>
+                    <h2>Perguntas Frequentes</h2>
+                    <p>Tire suas dúvidas sobre nossas soluções</p>
+                </div>
 
-            <div class="grid-container">
-                <article class="feature-card">
-                    <div class="card-icon">📰</div>
-                    <h3>Como a IA está revolucionando o campo</h3>
-                    <p>Descubra como algoritmos inteligentes estão otimizando colheitas e reduzindo desperdícios em todo o Brasil.</p>
-                    <p style="margin-top: 10px; font-size: 14px; color: #666;">15 Jun 2026</p>
-                </article>
+                <div class="faq-container">
+                    <details class="faq-item">
+                        <summary>
+                            <span>Como funciona a consultoria agrícola?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-content">
+                            <p>Nossa equipe de especialistas analisa sua propriedade, identifica oportunidades de melhoria e implementa soluções personalizadas. O processo inclui diagnóstico inicial, planejamento estratégico, implementação tecnológica e acompanhamento contínuo dos resultados.</p>
+                        </div>
+                    </details>
 
-                <article class="feature-card">
-                    <div class="card-icon">📰</div>
-                    <h3>Energia solar: o futuro das fazendas</h3>
-                    <p>Veja como produtores estão economizando e se tornando autossustentáveis com painéis solares.</p>
-                    <p style="margin-top: 10px; font-size: 14px; color: #666;">10 Jun 2026</p>
-                </article>
+                    <details class="faq-item">
+                        <summary>
+                            <span>Quais são os custos de implementação?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-content">
+                            <p>Os valores variam conforme o tamanho da propriedade e as tecnologias escolhidas. Oferecemos pacotes flexíveis e opções de financiamento. Entre em contato para uma proposta personalizada baseada nas suas necessidades específicas.</p>
+                        </div>
+                    </details>
 
-                <article class="feature-card">
-                    <div class="card-icon">📰</div>
-                    <h3>Irrigação inteligente: menos água, mais produção</h3>
-                    <p>Tecnologias de irrigação gota a gota estão transformando a agricultura em regiões áridas.</p>
-                    <p style="margin-top: 10px; font-size: 14px; color: #666;">05 Jun 2026</p>
-                </article>
+                    <details class="faq-item">
+                        <summary>
+                            <span>Quanto tempo leva para ver resultados?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-content">
+                            <p>Os primeiros resultados geralmente aparecem em 3 a 6 meses, dependendo da solução implementada. Sistemas de irrigação e monitoramento mostram retorno mais rápido, enquanto transições energéticas podem levar de 6 a 12 meses para completa implementação.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            <span>Vocês atendem pequenas propriedades?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-content">
+                            <p>Sim! Temos soluções escaláveis para todos os tamanhos de propriedade. Desde pequenos produtores familiares até grandes fazendas comerciais. Cada solução é adaptada à realidade e capacidade de investimento do cliente.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            <span>Que tipo de suporte técnico vocês oferecem?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-content">
+                            <p>Oferecemos suporte 24/7 via telefone, chat e e-mail. Nossa equipe técnica está sempre disponível para resolver dúvidas, fazer manutenção preventiva e garantir que todas as tecnologias estejam funcionando otimamente.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            <span>As soluções são compatíveis com equipamentos existentes?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-content">
+                            <p>Sim, nossas soluções são projetadas para integrar com equipamentos e sistemas já existentes na propriedade. Fazemos uma análise completa antes da implementação para garantir compatibilidade total.</p>
+                        </div>
+                    </details>
+                </div>
             </div>
         </section>
 
         <!-- Seção de Contato -->
         <section id="contato" class="contact-section">
-            <div class="contact-container">
-                <h2>Junte-se à Revolução Verde</h2>
-                <p>Receba relatórios mensais e análises sobre o mercado agrícola sustentável diretamente na sua caixa de entrada.</p>
-                
-                <form id="contact-form" class="newsletter-form">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="Seu nome completo" required>
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <span class="section-tag">Contato</span>
+                        <h2>Junte-se à Revolução Verde</h2>
+                        <p>Receba relatórios mensais e análises sobre o mercado agrícola sustentável diretamente na sua caixa de entrada.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <strong>E-mail</strong>
+                                    <p>contato@agrosustentavel.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">📞</div>
+                                <div>
+                                    <strong>Telefone</strong>
+                                    <p>(11) 1234-5678</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">📱</div>
+                                <div>
+                                    <strong>WhatsApp</strong>
+                                    <p>(11) 98765-4321</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">🕐</div>
+                                <div>
+                                    <strong>Horário</strong>
+                                    <p>Seg-Sex: 8h às 18h</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="Seu melhor e-mail" required>
+
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form">
+                            <h3>Entre em Contato</h3>
+                            <div class="form-group">
+                                <label for="name">Nome Completo *</label>
+                                <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Selecione um assunto</option>
+                                    <option value="consultoria">Consultoria</option>
+                                    <option value="tecnologias">Tecnologias</option>
+                                    <option value="parceria">Parceria</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message" placeholder="Sua mensagem..." rows="4"></textarea>
+                            </div>
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">Concordo com a política de privacidade</label>
+                            </div>
+                            <button type="submit" class="submit-button">Enviar Mensagem</button>
+                        </form>
                     </div>
-                    <button type="submit" class="submit-button">Inscrever-se</button>
-                </form>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Rodapé -->
+    <!-- Footer -->
     <footer class="main-footer">
         <div class="footer-container">
-            <p>&copy; 2026 AgroSustentável. Todos os direitos reservados.</p>
-            <div class="social-links">
-                <a href="#" title="LinkedIn">LinkedIn</a>
-                <a href="#" title="Instagram">Instagram</a>
-                <a href="#" title="YouTube">YouTube</a>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🌿</span> Agro<span>Sustentável</span>
+                    </div>
+                    <p>Transformando o agronegócio através da tecnologia sustentável desde 2020. Nosso compromisso é com o futuro da terra e das próximas gerações.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn" title="LinkedIn">🔗</a>
+                        <a href="#" aria-label="Instagram" title="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube" title="YouTube">▶️</a>
+                        <a href="#" aria-label="Facebook" title="Facebook">👍</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#producao">Soluções</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#desafios">Desafios</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Soluções</h4>
+                    <ul>
+                        <li><a href="#">Agricultura de Precisão</a></li>
+                        <li><a href="#">Irrigação Inteligente</a></li>
+                        <li><a href="#">Energia Solar</a></li>
+                        <li><a href="#">Monitoramento por Drones</a></li>
+                        <li><a href="#">Gestão Digital</a></li>
+                        <li><a href="#">Consultoria Agrícola</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Receba novidades e atualizações sobre agricultura sustentável.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 AgroSustentável. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Cookies</a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">↑</button>
 
     <!-- Script -->
     <script src="script.js"></script>
